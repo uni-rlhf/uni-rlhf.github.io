@@ -97,13 +97,13 @@
           <!-- Diffusion models have demonstrated their powerful generative capability in many tasks, with great potential to serve as a paradigm for offline reinforcement learning. However, the quality of the diffusion model is limited by the insufficient diversity of training data, which hinders the performance of planning and the generalizability to new tasks. This paper introduces AdaptDiffuser, an evolutionary planning method with diffusion that can self-evolve to improve the diffusion model hence a better planner, not only for seen tasks but can also adapt to unseen tasks. AdaptDiffuser enables the generation of rich synthetic expert data for goal-conditioned tasks using guidance from reward gradients. It then selects high-quality data via a discriminator to finetune the diffusion model, which improves the generalization ability to unseen tasks. Empirical experiments on two benchmark environments and two carefully designed unseen tasks in KUKA industrial robot arm and Maze2D environments demonstrate the effectiveness of AdaptDiffuser. For example, AdaptDiffuser not only outperforms the previous art <a href="https://diffusion-planning.github.io/" rel="noreferrer" target="_blank">Diffuser</a> by 20.8% on Maze2D and 7.5% on MuJoCo locomotion, but also adapts better to new tasks, e.g., KUKA pick-and-place, by 27.9% without requiring additional expert data. -->
 
           Reinforcement Learning with Human Feedback (RLHF) has received significant
-attention to perform tasks without costly manual reward design by aligning human preferences. It is crucial to consider different sources of human feedback
+attention to perform tasks without costly manual reward design by aligning human preferences. It is crucial to consider different sources of human feedback
 types and learning methods in different environments. However, it is difficult
-to quantify the progress in RLHF with diverse feedback due to the lack of standardized annotation platforms and widely used unified benchmarks. To bridge
-this gap, we introduce Uni-RLHF, a comprehensive system implementation tailored for RLHF, aiming to provide complete workflow from real human feedback,
+to quantify the progress in RLHF with diverse feedback due to the lack of standardized annotation platforms and widely used unified benchmarks. To bridge
+this gap, we introduce Uni-RLHF, a comprehensive system implementation tailored for RLHF, aiming to provide complete workflow from real human feedback,
 fostering progress in the development practical problems. Uni-RLHF contains
 three packages: 1) universal multi-feedback annotation platform, 2) large-scale
-crowdsourced feedback datasets, and 3) modular offline RLHF baseline implementations. Uni-RLHF has developed an user-friendly annotation interface tailored to various feedback types, with the ability to be compatible with a wide
+crowdsourced feedback datasets, and 3) modular offline RLHF baseline implementations. Uni-RLHF has developed an user-friendly annotation interface tailored to various feedback types, with the ability to be compatible with a wide
 range of mainstream RL environments. Then, we developed a systematic pipeline
 of crowdsourced annotations, resulting in a large-scale annotated datasets of more
 than 15 million steps across 32 popular tasks. Through extensive experiments,
@@ -111,7 +111,7 @@ the results in the collected datasets achieve competitive performance compared t
 well-designed manual reward. We evaluate some design choices and offer insights
 into their strengths and potential areas of improvement. We wish to build valuable
 open-source platform, datasets and baselines to facilitate develop more robust and
-reliable RLHF solutions based on realistic human feedback. The benchmark website is available at uni-rlhf.github.io.
+reliable RLHF solutions based on realistic human feedback. The benchmark website is available at <a href="uni-rlhf.github.io">uni-rlhf.github.io</a> .
 
         </p>
       </section>

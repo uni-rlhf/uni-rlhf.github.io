@@ -37,7 +37,7 @@
                     <div class="column has-text-centered">
                         <h1 class="title is-1 publication-title"><img src="./assets/images/logo.png" alt="Logo" style="margin-right: 1px; width: 70px;margin-top: 0px;">Uni-RLHF: Universal Platform and Benchmark Suite for Reinforcement Learning with Diverse Human Feedback</h1>
 <!--                        <h1 class="title is-1 publication-title">Uni-RLHF: Universal Platform and Benchmark Suite for Reinforcement Learning with Diverse Human Feedback</h1>-->
-                        <h2 class="title is-4 conference-authors"><a target="_blank" href="">Preprint</a></h2>
+                        <h2 class="title is-3 conference-authors"><a target="_blank" href="">Under Review</a></h2>
                         <div class="is-size-5 publication-authors">
 <!--                            <span class="author-block">-->
 <!--                                <a target="_blank" href="https://www.seas.upenn.edu/~jasonyma/">-->
@@ -111,6 +111,22 @@
 <!--                                        </span>-->
 <!--                                        <span>arXiv</span>-->
 <!--                                    </a>-->
+                                </span>
+                                <span class="link-block">
+                                    <a target="_blank" href="http://43.132.253.84:6002/"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fa fa-network-wired"></i>
+                                        </span>
+                                        <span>Demo</span>
+                                    </a>
+                                    <a target="_blank" href=""
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-database"></i>
+                                        </span>
+                                        <span>Dataset (Coming Soon)</span>
+                                    </a>
                                 </span>
 
 <!--                                <span class="link-block">-->
@@ -354,18 +370,15 @@
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
                         <h2 class="title is-3"><span class="dvima">Universal Platform for Reinforcement Learning with Diverse Feedback Types</span></h2>
-                        <p style="font-size: 125%">
-To align RLHF methodologies with practical problems and cater to researchers’ needs for systematic
-studies of various feedback types within a unified context, we introduce the Uni-RLHF system.
-                            We start with the universal annotation platform <i>Enhanced-RLHF</i>, which supports various types of
-human feedback along with a standardized encoding format for diverse human feedback. Using
-this platform, we have established a pipeline for crowdsourced feedback collection and filtering,
+                        <p style="font-size: 125%">To align RLHF methodologies with practical problems and cater to researchers’ needs for systematic
+studies of various feedback types within a unified context, we introduce the Uni-RLHF system. We start with the universal annotation platform <i>Enhanced-RLHF</i>, which supports various types of
+human feedback along with a standardized encoding format for diverse human feedback. Using this platform, we have established a pipeline for crowdsourced feedback collection and filtering,
 amassing large-scale crowdsourced labeled datasets and setting a unified research benchmark.
                         </p>
                         <br>
                         <br>
 
-                        <h3 class="title is-4"><span class="dvima">Overview of the Uni-RLHF</span></h3>
+                        <h3 class="title is-4"><span class="dvima">Implementation For Multi-feedback Annotation Platform</span></h3>
 
                         <img src="assets/images/framework.jpg" class="interpolation-image" alt=""
                             style="display: block; margin-left: auto; margin-right: auto" />
@@ -385,14 +398,21 @@ labels into a standardized format.
                             style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
 
                         <span style="font-size: 125%">
-                            <span style="font-weight: bold">The Enhanced-RLHF supports both online and offline training modes.</span> Some representative tasks from these environments are visualized above.
+                            <span style="font-weight: bold">The Enhanced-RLHF supports both online and offline training modes. Some representative tasks from these environments are visualized above.</span>
 Furthermore, Enhanced-RLHF allows easy customization and integration of new offline datasets
 by simply adding three functions.
                         </span>
                         <br>
+                        <img src="assets/images/online_mode.png" class="interpolation-image" alt=""
+                            style="display: block; width: 65%; margin-left: auto; margin-right: auto" />
+                        <br>
+                        <span style="font-size: 125%">
+                            <span style="font-weight: bold">Online Asynchronous Labeling Process of Uni-RLHF.</span>  We show Uni-RLHF can learn from asynchronous human feedback and annotators interact with agents through remote web interface.
+                        </span>
                         <br>
                         <br>
-                        <!-- <h3 class="title is-4"><span class="dvima">Comparison with Human Rewards</span></h3> -->
+                        <h3 class="title is-4"><span class="dvima">Standardized Feedback Encoding Format for Reinforcement Learning</span></h3>
+
                         <br>
                         <div class="columns">
                             <div class="column has-text-centered">
@@ -418,24 +438,20 @@ by simply adding three functions.
                         </div>
                         <span style="font-size: 125%">
                             <span style="font-weight: bold">Standardized Feedback Encoding Format for Reinforcement Learning.</span> To capture and utilize diverse and heterogeneous feedback labels from annotators, we analyze a
-range of research and propose a standardized feedback encoding format along with possible training
-methodologies.
+range of research and propose a standardized feedback encoding format along with possible training methodologies.
                         </span>
-                        <br>
-                        <br>
-                        <img src="assets/images/online_mode.png" class="interpolation-image" alt=""
-                            style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
-                        <br>
-                        <span style="font-size: 125%">
-                            <span style="font-weight: bold">Online Asynchronous Labeling Process of Uni-RLHF.</span>  We show Uni-RLHF can learn from asynchronous human feedback and annotators interact with agents through remote web interface.
-                        </span>
+
 
                         <br>
                         <br>
                         <h3 class="title is-4"><span class="dvima">Large-scale Crowdsourced Annotation Pipeline</span></h3>
 
                         <span style="font-size: 125%">
-                            To validate the ease of use of various aspects of the Uni-RLHF platform, we implemented large-scale crowdsourced annotation tasks for feedback label collection, using widely recognized Offline RL datasets. After completing the data collection, we conducted two rounds of data filtering to minimize the amount of noisy crowdsourced data. Our goal is to construct crowdsourced data annotation pipelines around the Uni-RLHF, facilitating the creation of large-scale annotated datasets via parallel crowdsourced data annotation and filtering.
+                            To validate the ease of use of various aspects of the Uni-RLHF platform, we implemented large-scale crowdsourced annotation tasks for feedback label collection, using widely recognized Offline RL datasets.
+                            After completing the data collection, we conducted two rounds of data filtering to minimize the amount of noisy crowdsourced data. <strong>We establish a systematic pipeline of crowdsourced annotations, resulting in large-scale annotated
+                            datasets comprising more than 15 million steps across 32 popular tasks.</strong>
+                            Our goal is to construct crowdsourced data annotation pipelines around the Uni-RLHF,
+                            facilitating the creation of large-scale annotated datasets via parallel crowdsourced data annotation and filtering.
                         </span>
 
 <!--                        <div class="columns">-->
@@ -462,51 +478,17 @@ methodologies.
                         <br>
                         <br>
                         <img src="assets/images/ann_acc2.png" class="interpolation-image" alt=""
-                            style="display: block; width: 40%; margin-left: auto; margin-right: auto" />
-                        <br>
+                            style="display: block; width: 30%; margin-left: auto; margin-right: auto" />
 
                         <span style="font-size: 125%">
-                            <span style="font-weight: bold">The effectiveness of each component in the annotation pipeline.</span> We initially sampled 300 trajectory segments of the left-c task in SMARTS for expert annotation, referred to as <strong>Oracle</strong>. We had five crowdsourcing instances, each annotating 100 trajectories in three distinct settings. \textit{naive} implies only seeing the task description, \textit{+example} allows for viewing five expert-provided annotation samples and detailed analysis, and \textit{+filter} adds filters to the previous conditions. The experimental results, displayed in \cref{fig:filter}, revealed that each component significantly improved annotation accuracy, ultimately achieving a 98\% agreement rate with the expert annotations.
-
+                            <span style="font-weight: bold">The effectiveness of each component in the annotation pipeline.</span> We initially sampled 300
+                            trajectory segments of the left-c task in SMARTS for expert annotation, referred to as <strong>Oracle</strong>.
+                            We had five crowdsourcing instances, each annotating 100 trajectories in three distinct settings.
+                            <i>naive</i> implies only seeing the task description, <i>+example</i> allows for viewing five expert-provided annotation
+                            samples and detailed analysis, and <i>+filter</i> adds filters to the previous conditions. The experimental results
+                            displayed in above, revealed that each component significantly improved annotation accuracy, ultimately achieving a 98% agreement rate
+                            with the expert annotations.
                         </span>
-
-<!--                        <span style="font-size: 125%">-->
-<!--                            <span style="font-weight: bold"></span> The pen spinning task requires a Shadow Hand to continuously rotate a pen to achieve some pre-defined spinning patterns for-->
-<!--                            as many cycles as possible. We solve this task by (1) instructing Eureka to generate a reward function for re-orienting the pen to random target configurations,-->
-<!--                            and then (2) fine-tuning this pre-trained policy using the Eureka reward to reach the desired sequence of pen-spinning configurations.-->
-<!--                            As shown, Eureka fine-tuning quickly adapts the policy successfully spin the pen for many cycles in a row. In contrast, neither pre-trained or learning-from-scratch-->
-<!--                            policies can complete even a single cycle.-->
-<!--                        </span>-->
-<!--                        <br>-->
-<!--                        <br>-->
-<!--                        <br>-->
-
-<!--                        <h3 class="title is-3"><span class="dvima">Eureka from Human Feedback</span></h3>-->
-<!--                        <br>-->
-
-<!--                        <img src="assets/images/bidex_reward_assistant.png" class="interpolation-image" alt=""-->
-<!--                            style="display: block; width: 70%; margin-left: auto; margin-right: auto" />-->
-<!--                        <br>-->
-<!--                        <span style="font-size: 125%">-->
-<!--                            <span style="font-weight: bold">Eureka effectively improves and benefits from human reward initialization.</span>-->
-<!--                        We study whether starting with a human reward function initialization, a common scenario in real-world RL applications, is advantageous for Eureka.-->
-<!--                        As shown, regardless of the quality of the human rewards, Eureka improves and benefits from human rewards as Eureka (Human Init.) is uniformly better than both Eureka and Human on all tasks.-->
-<!--                        </span>-->
-<!--                        <br>-->
-<!--                        <br>-->
-
-<!--                        <img src="assets/images/eureka_rlhf.png" class="interpolation-image" alt=""-->
-<!--                            style="display: block; width: 100%; margin-left: auto; margin-right: auto" />-->
-<!--                        <br>-->
-<!--                        <span style="font-size: 125%">-->
-<!--                            <span style="font-weight: bold">Eureka enables In-Context Reinforcement Learning from Human Feedback (RLHF).</span> Eureka can incorporate human feedback to modify its rewards so that they progressively induce safer and more human-aligned agent behavior.-->
-<!--                            In this example, we show how Eureka can teach a Humanoid how to run upright from a handful of human feedback, which replaces the previous automated reward reflection.-->
-<!--                             The final learned behavior (Iteration 5) is more preferred by human users by a wide margin than-->
-<!--                            the original Eureka-learned Humanoid running gait.-->
-<!--                        </span>-->
-<!--                        <br>-->
-<!--                        <br>-->
-<!--                        <br>-->
                     </div>
                 </div>
             </div>
@@ -518,31 +500,37 @@ methodologies.
             <div class="rows">
                 <div class="rows is-centered ">
                     <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">Evaluating Offline RL with Comparative Feedback</span></h2>
+                        <h2 class="title is-3"><span class="dvima">Evaluating Benchmarks for offline RLHF</span></h2>
+
+                        <p style="font-size: 125%">
+                        Finally, we conducted numerous experiments on downstream decision-making tasks, utilizing the collected crowdsourced
+                        feedback datasets to verify the reliability of the Uni-RLHF system.
+                        </p>
+                        <br>
+                        <h3 class="title is-4"><span class="dvima">Evaluating Offline RL with Comparative Feedback</span></h3>
+
                         <span style="font-size: 125%">
-                            <span style="font-weight: bold">D4RL Results</span>
-
+                            <span style="font-weight: bold">D4RL Results.</span> We used <strong>Oracle</strong> to represent models trained using hand-designed task rewards.
+                            In addition, we assessed two different methods of acquiring labels: one is crowd-sourced labels obtained by crowd-sourcing through
+                            the Uni-RLHF system, denoted as <strong>CS</strong>, and the other is synthetic labels generated by script teachers based on ground
+                            truth task rewards, which can be considered as expert labels, denoted as <strong>ST</strong>.
                         </span>
-<!--                        <p style="font-size: 125%">-->
-<!--                            To align RLHF methodologies with practical problems and cater to researchers’ needs for systematic-->
-<!--studies of various feedback types within a unified context, we introduce the Uni-RLHF system. Uni-RLHF consists of three components including the platform, the datasets, and the offline RLHF baselines. We start with the universal annotation platform Enhanced-RLHF, which supports various types of-->
-<!--human feedback along with a standardized encoding format for diverse human feedback. Using this platform, we have established a pipeline for crowdsourced feedback collection and filtering,-->
-<!--amassing large-scale crowdsourced labeled datasets and setting a unified research benchmark.-->
-<!--                        </p>-->
-
+                        <br>
                         <br>
                         <img src="assets/images/d4rl2.png" class="interpolation-image" alt=""
                             style="display: block; width: 100%; margin-left: auto; margin-right: auto" />
                         <br>
 
                         <span style="font-size: 125%">
-                            <span style="font-weight: bold">SMARTS Results</span>
+                            <span style="font-weight: bold">SMARTS Results.</span> We studied three typical scenarios in autonomous driving scenarios.
+                            The reward function design is particularly complex because it requires more extensive expertise
+                            and balancing multiple factors. We empirically demonstrate that we can achieve competitive performance simply
+                            by crowdsourced annotations, compared to carefully designed reward functions or scripted teachers.
                         </span>
-
                         <br>
                         <br>
                         <img src="assets/images/smarts.png" class="interpolation-image" alt=""
-                            style="display: block; width: 50%; margin-left: auto; margin-right: auto" />
+                            style="display: block; width: 65%; margin-left: auto; margin-right: auto" />
                         <br>
 
                         <div class="columns">
@@ -565,112 +553,61 @@ methodologies.
                                 <p style="font-size: 110%">Cruise</p>
                             </div>
                         </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="hero is-light is-small"> -->
-<!--        <div>-->
-
-<!--            <div class="hero-body">-->
-<!--                <div class="container is-max-desktop">-->
-<!--                    <div class="columns is-centered has-text-centered">-->
-<!--                        <video poster="" id="" autoplay controls muted loop width="80%" playbackRate=2.0 style="border-radius: 5px;">-->
-<!--                            <source src="videos/pen_styles.mp4" type="video/mp4">-->
-<!--                        </video>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <br>-->
-<!--                <div class="container">-->
-<!--                    <div id="results-carousel" class="carousel results-carousel">-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_center.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_upside_down.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_-11-1.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_-101.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_-110.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_-1.0,1.0,-1.0.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_1.0,0.0,0.0.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_0-11.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_withflip_0.0,-1.0,0.0.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-    </section>
-
-    <section class="section">
-        <div class="container is-max-widescreen">
-            <div class="rows">
-                <div class="rows is-centered ">
-                    <div class="row is-full-width">
-                        <h2 class="title is-3"><span class="dvima">Evaluating Offline RL with Attribuete Feedback</span></h2>
+                        <div class="columns is-centered" style="font-size: 120%">
+                            <p><strong>Oracle model (left) and our CS model (right) for three scenarios in autonomous driving</strong></p>
+                        </div>
                         <span style="font-size: 125%">
-                            <span style="font-weight: bold"></span>We visualized the behavior switching by adjusting the target attributes every 200 steps. The attribute
-values for speed were set to [0.1, 1.0, 0.5, 0.1, 1.0], and for height, they were set to [1.0, 0.6, 1.0, 0.1, 1.0]. The
-corresponding changes in attributes can be clearly observed in the curves.
-
+                            Left_c video presents an instance
+                            of a left-turn-cross scenario in which the CS model succeeds, while the Oracle model fails due to a collision.
+                            In this scenario, the ego vehicle is required to start from a single-lane straight road, make a left turn at the cross intersection,
+                            proceed onto another two-lane straight road, and ultimately reach a goal located at the end of one of these two lanes.
+                            The video reveals that the Oracle model fails to timely decelerate the ego vehicle,
+                            resulting in a collision with the vehicle ahead, whereas the CS model opts to stop and wait
+                            for the vehicle in front, eventually passing through the intersection smoothly.
                         </span>
-
+                        <br>
+                        <br>
+                        <h3 class="title is-4"><span class="dvima">Evaluating Offline RL with Attribute Feedback</span></h3>
+<!--                        <br>-->
+                        <span style="font-size: 125%">
+                            <span style="font-weight: bold">Trained model’s ability to switch behavior.</span> We ran the model for 1000 steps and
+visualized the behavior switching by adjusting the target attributes every 200 steps, recording the walker’s speed and torso height. The attribute
+values for speed were set to [0.1, 1.0, 0.5, 0.1, 1.0], and for height, they were set to [1.0, 0.6, 1.0, 0.1, 1.0]. The
+corresponding changes in attributes can be clearly observed in the curves and corresponding video.
+                        </span>
+                        <br>
+                        <br>
                         <div class="columns">
                             <div class="column has-text-centered">
-                                <video poster="" id="" autoplay controls muted loop height="50%" playbackRate=2.0 style="border-radius: 5px;">
+                                <video poster="" id="" autoplay controls muted loop height="30%" playbackRate=2.0 style="border-radius: 0px;">
                                     <source src="videos/attribute.mp4" type="video/mp4">
                                 </video>
-                                <p style="font-size: 110%">Walker</p>
+<!--                                <p style="font-size: 110%">Walker</p>-->
                             </div>
-                            <div class="column has-text-centered">
-                                <img src="assets/images/speed.png" class="interpolation-image" alt="" />
-                                <p style="font-size: 110%">Speed</p>
+                            <div class="rows">
+                                <div class="column has-text-centered">
+                                    <img src="assets/images/speed.png" class="interpolation-image" alt=""
+                            style="display: block; width: 50%; margin-left: auto; margin-right: auto" />
+<!--                                    <p style="font-size: 110%">Speed</p>-->
+                                </div>
+                                <div class="column has-text-centered">
+                                    <img src="assets/images/height.png" class="interpolation-image" alt=""
+                            style="display: block; width: 50%; margin-left: auto; margin-right: auto" />
+<!--                                    <p style="font-size: 110%">Torso height</p>-->
+                                </div>
                             </div>
-                            <div class="column has-text-centered">
-                                <img src="assets/images/height.png" class="interpolation-image" alt="" />
-                                <p style="font-size: 110%">Torso height</p>
-                            </div>
+
                         </div>
 
-
                         <span style="font-size: 125%">
-                            <span style="font-weight: bold">Human Evaluation</span>
+                            <span style="font-weight: bold">Human Evaluation.</span> we conducted human evaluation experiments for
+                            the agents trained by attribute feedback. We first collected 3 trajectories with different humanness,
+                            which were set to [0.1, 0.6, 1] and invited five human evaluators. The human evaluators performed
+                            a blind selection to judge which video is most human-like and which video is least human-like.
                         </span>
 
+                        <br>
+                        <br>
                         <br>
                         <div class="columns is-centered has-text-centered">
                             <video poster="" id="" autoplay controls muted width="40%" playbackRate=2.0 style="border-radius: 5px;">
@@ -679,75 +616,18 @@ corresponding changes in attributes can be clearly observed in the curves.
                         </div>
                         <br>
 
+                        <span style="font-size: 125%">
+                            <span style="font-weight: bold"></span> Finally, all people correctly chose the highest humanness trajectory, and only one person chose
+the lowest humanness trajectory incorrectly. The experimental results confirm that agents through
+RLHF training are able to follow the abstraction metrics well.
+                        </span>
 
                     </div>
                 </div>
             </div>
         </div>
-        <!-- <div class="hero is-light is-small"> -->
-<!--        <div>-->
-
-<!--            <div class="hero-body">-->
-<!--                <div class="container is-max-desktop">-->
-<!--                    <div class="columns is-centered has-text-centered">-->
-<!--                        <video poster="" id="" autoplay controls muted loop width="80%" playbackRate=2.0 style="border-radius: 5px;">-->
-<!--                            <source src="videos/pen_styles.mp4" type="video/mp4">-->
-<!--                        </video>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <br>-->
-<!--                <div class="container">-->
-<!--                    <div id="results-carousel" class="carousel results-carousel">-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_center.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_upside_down.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_-11-1.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_-101.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_-110.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_-1.0,1.0,-1.0.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_1.0,0.0,0.0.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_0-11.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                        <div class="item">-->
-<!--                            <video poster="" id="" autoplay controls muted loop height="100%" playbackRate=2.0>-->
-<!--                                <source src="videos/pen_gallery/pen_spin_custom_withflip_0.0,-1.0,0.0.mp4" type="video/mp4">-->
-<!--                            </video>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
     </section>
+
     <section class="section">
         <div class="container is-max-widescreen">
             <div class="rows">
@@ -755,24 +635,31 @@ corresponding changes in attributes can be clearly observed in the curves.
                     <div class="row is-full-width">
                         <h2 class="title is-3"><span class="dvima">Online Experiments</span></h2>
 
-                        <!-- <img src="assets/images/eureka.png" class="interpolation-image" alt=""
-                            style="display: block; margin-left: auto; margin-right: auto" />
-                        <br> -->
+                        <p style="font-size: 125%">
+                        We validate the effectiveness of the online mode of Uni-RLHF, which allow agents to learn novel behaviors
+                        where a suitable reward function is difficult to design. Finally, we give totally 200 queries of human
+                        feedback for walker front flips experiments and we observe that <strong>walker can master the continuous multiple
+                        front flip fluently</strong>.
+                        </p>
+                        <br>
+                        <br>
                         <div class="columns is-centered has-text-centered">
                         <video poster="" id="" autoplay controls muted width="20%" playbackRate=2.0 style="border-radius: 5px;">
                             <source src="./videos/walker.mp4" type="video/mp4">
                         </video>
                         </div>
-<!--                        <span style="font-size: 125%"><b>Overview.</b> Eureka achieves human-level reward design by in-context <b>evolving</b> reward functions-->
-<!--                            More specifically, Eureka first takes unmodified environment-->
-<!--                            source code-->
-<!--                            and language task description as context to-->
-<!--                            zero-shot generate executable reward functions from a coding LLM. Then, it iterates-->
-<!--                            between-->
-<!--                            evolutionary reward search,-->
-<!--                            GPU-accelerated reward evaluation, and reward reflection to progressively improve-->
-<!--                            its reward-->
-<!--                            outputs.</span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <div class="rows">
+                <div class="rows is-centered ">
+                    <div class="row is-full-width">
+                        <h2 class="title is-3"><span class="dvima">Visualization of the Platform</span></h2>
                     </div>
                 </div>
             </div>

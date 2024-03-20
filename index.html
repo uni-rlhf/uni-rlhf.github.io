@@ -91,13 +91,6 @@
                                     </a>
                                 </span>
                                 <span class="link-block">
-                                    <a target="_blank" href=""
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span class="icon">
-                                            <i class="fa fa-network-wired"></i>
-                                        </span>
-                                        <span>Demo</span>
-                                    </a>
                                     <a target="_blank" href="https://drive.google.com/drive/folders/1JMWyl0iAm2JJ5pOBW5M9kTOj6pJn8H3N?usp=drive_link"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
@@ -105,7 +98,7 @@
                                         </span>
                                         <span>Dataset</span>
                                     </a>
-                                    <a target="_blank" href="https://github.com/pickxiguapi/Clean-Offline-RLHF"
+                                    <a target="_blank" href="https://github.com/pickxiguapi/Uni-RLHF-Platform"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
@@ -350,7 +343,7 @@
                     <div class="row is-full-width">
                         <h2 class="title is-3"><span class="dvima">Universal Platform for Reinforcement Learning with Diverse Feedback Types</span></h2>
                         <p style="font-size: 125%">To align RLHF methodologies with practical problems and cater to researchers’ needs for systematic
-studies of various feedback types within a unified context, we introduce the Uni-RLHF system. We start with the universal annotation platform <i>Enhanced-RLHF</i>, which supports various types of
+studies of various feedback types within a unified context, we introduce the Uni-RLHF system. We start with the universal annotation platform, which supports various types of
 human feedback along with a standardized encoding format for diverse human feedback. Using this platform, we have established a pipeline for crowdsourced feedback collection and filtering,
 amassing large-scale crowdsourced labeled datasets and setting a unified research benchmark.
                         </p>
@@ -363,7 +356,7 @@ amassing large-scale crowdsourced labeled datasets and setting a unified researc
                             style="display: block; margin-left: auto; margin-right: auto" />
                         <br>
                         <span style="font-size: 125%">
-                            <span style="font-weight: bold">Overview of the Uni-RLHF system.</span> Uni-RLHF consists of three components including the platform, the datasets, and the offline RLHF baselines. Enhanced-RLHF packs up
+                            <span style="font-weight: bold">Overview of the Uni-RLHF system.</span> Uni-RLHF consists of three components including the platform, the datasets, and the offline RLHF baselines. Uni-RLHF packs up
 abstractions for RLHF annotation workflow, where the essentials include: ① interfaces supporting
 a wide range of online environments and offline datasets, ② a query sampler that determines which
 data to display, ③ an interactive user interface, enabling annotators to view available trajectory seg-
@@ -377,16 +370,9 @@ labels into a standardized format.
                             style="display: block; width: 80%; margin-left: auto; margin-right: auto" />
 
                         <span style="font-size: 125%">
-                            <span style="font-weight: bold">The Enhanced-RLHF supports both online and offline training modes. Some representative tasks from these environments are visualized above.</span>
-Furthermore, Enhanced-RLHF allows easy customization and integration of new offline datasets
+                            <span style="font-weight: bold">The Uni-RLHF supports both online and offline training modes. Some representative tasks from these environments are visualized above.</span>
+Furthermore, Uni-RLHF allows easy customization and integration of new offline datasets
 by simply adding three functions.
-                        </span>
-                        <br>
-                        <img src="assets/images/online_mode.png" class="interpolation-image" alt=""
-                            style="display: block; width: 65%; margin-left: auto; margin-right: auto" />
-                        <br>
-                        <span style="font-size: 125%">
-                            <span style="font-weight: bold">Online Asynchronous Labeling Process of Uni-RLHF.</span>  We show Uni-RLHF can learn from asynchronous human feedback and annotators interact with agents through remote web interface.
                         </span>
                         <br>
                         <br>
@@ -927,14 +913,12 @@ RLHF training are able to follow the abstraction metrics well.
 <section class="section" id="BibTeX">
     <div class="container is-max-widescreen content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@inproceedings{
-anonymous2023unirlhf,
-title={Uni-{RLHF}: Universal Platform and Benchmark Suite for Reinforcement Learning with Diverse Human Feedback},
-author={Anonymous},
-booktitle={Submitted to The Twelfth International Conference on Learning Representations},
-year={2023},
-url={https://openreview.net/forum?id=WesY0H9ghM},
-note={under review}
+        <pre><code>@inproceedings{yuan2023unirlhf,
+    title={Uni-{RLHF}: Universal Platform and Benchmark Suite for Reinforcement Learning with Diverse Human Feedback},
+    author={Yuan, Yifu and Hao, Jianye and Ma, Yi and Dong, Zibin and Liang, Hebin and Liu, Jinyi and Feng, Zhixin and Zhao, Kai and Zheng, Yan}
+    booktitle={The Twelfth International Conference on Learning Representations, ICLR},
+    year={2024},
+    url={https://openreview.net/forum?id=WesY0H9ghM},
 }
 </code></pre>
     </div>
